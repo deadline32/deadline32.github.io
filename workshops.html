@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vision</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Hidayah - v4.7.0
+  * Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <script>
+    function renderTime(){
+    //Date
+    var mydate = new Date();
+    var year = mydate.getFullYear();
+    if(year<1000)
+    {
+        year+=1900;
+    }
+    var day = mydate.getDay();
+    var month = mydate.getMonth();
+    var daym = mydate.getDate();
+    var dayarray = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+    var montharray = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+    // Date end
+    var currentTime = new Date();
+    var h = currentTime.getHours()
+    //Time
+    var currentTime = new Date();
+    var h = currentTime.getHours();
+    var m = currentTime.getMinutes();
+    var s = currentTime.getSeconds();
+    if(h==24)
+    {
+        h = 0;
+    }
+    else if(h>12)
+    {
+        h = h - 0;
+    }
+
+    if(h<10)
+    {
+        h = "0"+h;
+    }
+    if(m<10)
+    {
+        m = "0"+m;
+    }
+    if(s<10)
+    {
+        s = "0"+s;
+    }
+
+    var myClock = document.getElementById("date-time");
+    myClock.textContent = "" +dayarray[day]+" "+daym+" "+montharray[month]+" "+year+" | "+h+":"+m+":"+s;
+
+    setTimeout("renderTime()", 1000);
+}
+renderTime();
+  </script>
+
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+    speed: 400,
+    spaceBetween: 100,
+    initialSlide: 0,
+    //truewrapper adoptsheight of active slide
+    autoHeight: false,
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // delay between transitions in ms
+    autoplay: 5000,
+    autoplayStopOnLast: false, // loop false also
+    // If we need pagination
+    pagination: '.swiper-pagination',
+    paginationType: "bullets",
+    
+    // Navigation arrows
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    
+    // And if we need scrollbar
+    //scrollbar: '.swiper-scrollbar',
+    // "slide", "fade", "cube", "coverflow" or "flip"
+    effect: 'slide',
+    // Distance between slides in px.
+    spaceBetween: 60,
+    //
+    slidesPerView: 2,
+    //
+    centeredSlides: true,
+    //
+    slidesOffsetBefore: 0,
+    //
+    grabCursor: true,
+  })        
+
+  </script>
+
+</head>
+
+<body onload="renderTime();">
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p id="date-time"></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+              <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">श्रीव्यासतीर्थसंशोधनप्रतिष्ठानम्</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+            <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          
+            <li class="dropdown"><a href="#about"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="vision.html">Vision</a></li>
+                <li><a href="mission.html">Mission</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto" href="#team">Our Committee</a></li>
+            <li class="dropdown"><a href="#"><span>Library</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">E-library</a></li>
+                
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+              <ul>
+                <li><a href="#">Past Events</a></li>
+                <li><a href="#">Workshops</a></li>
+              </ul>
+            </li>
+            
+            <li><a class="nav-link scrollto" href="#">Gallery</a></li>
+            <li><a class="nav-link scrollto" href="#">Publications</a></li>
+            
+            <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <ol>
+              <li><a href="index.html">About Us</a></li>
+              <li>Vision</li>
+            </ol>
+            <h2>Vision</h2>
+            <h3>ಸಂಶೋಧನ ಪ್ರತಿಷ್ಠಾನದ ಉದ್ದೇಶಗಳು </h3>
+            <ul>
+                <li><p>ಸಂಸ್ಕೃತ, ತುಳು, ನಂದಿನಾಗರಿ, ಪಾಲಿ ಮೊದಲಾದ ಲಿಪಿಗಳಲ್ಲಿರುವ ಅಪ್ರಟಿತ, ಪ್ರಾಚೀನ ಹಾಗೂ ಅಪೂರ್ವ ಸಂಸ್ಕೃತ ಗ್ರಂಥಗಳ ಸಂಗ್ರಹ, ಅಧ್ಯಯನ, ಸಂಶೋಧನ ಮತ್ತು ಪ್ರಕಾಶನ.</p></li>
+                <li>ನ್ಯಾಯ, ವೇದಾಂತ, ಮೀಮಾಂಸ, ತರ್ಕ, ವ್ಯಾಕರಣ, ಇತಿಹಾಸ-ಪುರಾಣ ಮುಂತಾದ ಶಾಸ್ತ್ರಗಳಲ್ಲಿ ಎಮ್.ಫಿಲ್ ಮತ್ತು ಪಿ.ಹೆಚ್.ಡಿ. ಪದವಿಗೆ ಅರ್ಹರಾದ ಸಂಶೋಧಕರಿಗೆ ಮಾರ್ಗದರ್ಶನ ನೀಡುವುದು. </li>
+                <li>ಈ-ಸಂಸ್ಕೃತ ಕಲಿಕೆಗೆ ಪ್ರೋತ್ಸಾಹ ನೀಡುವುದು.</li>
+                <li>ಈ-ಗ್ರಂಥಾಲಯವನ್ನು ಅಭಿವೃದ್ಧಿ ಪಡಿಸುವುದು. </li>
+                <li>ರಾಷ್ಟ್ರೀಯ ಮಟ್ಟದ ವಿಚಾರಗೋಷ್ಠಿಗಳನ್ನು ಹಾಗೂ ಕಾರ್ಯಾಗಾರಗಳನ್ನು ಏರ್ಪಡಿಸುವುದು. </li>
+                <li>ವೇದ ಅಧ್ಯಯನ ಕೇಂದ್ರವನ್ನು ರಾಜ್ಯದ ಬೇರೆ ಬೇರೆ ಸ್ಥಳಗಳಲ್ಲಿ ಪ್ರಾರಂಭಿಸುವುದು. </li>
+                <li>ಉಚಿತ ಯೋಗ ಶಿಬಿರವನ್ನು ಏರ್ಪಡಿಸುವುದು. </li>
+                <li>ಉಚಿತ ವೈದ್ಯಕೀಯ ಶಿಬಿರಗಳನ್ನು ಏರ್ಪಡಿಸುವುದು. </li>
+                <li>ವಿಶೇಷ ಉಪನ್ಯಾಸಗಳನ್ನು ಏರ್ಪಡಿಸುವ ಮೂಲಕ ಭಾರತೀಯ ಸಾಮಾಜಿಕ, ನೈತಿಕ ಹಾಗೂ ಆಧ್ಯಾತ್ಮಿಕ ಮೌಲ್ಯಗಳನ್ನು ಸಮಾಜದಲ್ಲಿ ಜಾಗೃತಿಗೊಳಿಸುವುದು. </li>
+                <li>ಭಾರತೀಯ ಸಂಸ್ಕೃತಿ ಹಾಗೂ ಪರಂಪರೆಯನ್ನು ಸಂರಕ್ಷಿಸುವುದರ ಮೂಲಕ ಸಮಾಜದ ರ‍್ವಾಂಗೀಣ ಅಭಿವೃದ್ಧಿಗಾಗಿ ಶ್ರಮಿಸುವುದು.೧)	ಅಪೂರ್ವ ಗ್ರಂಥಗಳ ಸಂಪಾದನೆ ಮತ್ತು ಪ್ರಕಾಶನ
+                    ಭಾರತೀಯ ತತ್ವಜ್ಞಾನಕ್ಕೆ ವ್ಯಾಸರಾಜ ಮಠದ ಪರಂಪರೆಯಲ್ಲಿ ಬಂದ ಅನೇಕ ಪೀಠಾಧೀಶರು ಗ್ರಂಥಕರ್ತೃಗಳಾಗಿ ತಮ್ಮದೇ ಕೊಡುಗೆಯನ್ನು ನೀಡಿದ್ದಾರೆ. ಅವರಿಂದ ರಚಿತವಾದ ಅಪೂರ್ವಗ್ರಂಥಗಳ ಸಂಪಾದನೆ ಕಾರ್ಯವನ್ನು ಕೈಗೊಳ್ಳಲಾಗುವುದು.
+                    </li>
+
+            </ul>
+
+            
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+   
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Subscribe to our Newsletter</h4>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="row">
+
+              
+
+              
+
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h4></h4>
+               
+
+              </div>
+
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

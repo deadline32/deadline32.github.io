@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Mission</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Hidayah - v4.7.0
+  * Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <script>
+    function renderTime(){
+    //Date
+    var mydate = new Date();
+    var year = mydate.getFullYear();
+    if(year<1000)
+    {
+        year+=1900;
+    }
+    var day = mydate.getDay();
+    var month = mydate.getMonth();
+    var daym = mydate.getDate();
+    var dayarray = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+    var montharray = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+    // Date end
+    var currentTime = new Date();
+    var h = currentTime.getHours()
+    //Time
+    var currentTime = new Date();
+    var h = currentTime.getHours();
+    var m = currentTime.getMinutes();
+    var s = currentTime.getSeconds();
+    if(h==24)
+    {
+        h = 0;
+    }
+    else if(h>12)
+    {
+        h = h - 0;
+    }
+
+    if(h<10)
+    {
+        h = "0"+h;
+    }
+    if(m<10)
+    {
+        m = "0"+m;
+    }
+    if(s<10)
+    {
+        s = "0"+s;
+    }
+
+    var myClock = document.getElementById("date-time");
+    myClock.textContent = "" +dayarray[day]+" "+daym+" "+montharray[month]+" "+year+" | "+h+":"+m+":"+s;
+
+    setTimeout("renderTime()", 1000);
+}
+renderTime();
+  </script>
+
+</head>
+
+<body onload="renderTime();">
+
+  <div class="sub-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-8">
+          <div class="left-content">
+            <p id="date-time"></p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-sm-4">
+          <div class="right-icons">
+            <ul>
+              <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+              <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">श्रीव्यासतीर्थसंशोधनप्रतिष्ठानम्</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          
+          <li class="dropdown"><a href="#about"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="vision.html">Vision</a></li>
+              <li><a href="mission.html">Mission</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#team">Our Committee</a></li>
+          <li class="dropdown"><a href="#"><span>Library</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">E-library</a></li>
+              
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Past Events</a></li>
+              <li><a href="#">Workshops</a></li>
+            </ul>
+          </li>
+          
+          <li><a class="nav-link scrollto" href="#">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#">Publications</a></li>
+          
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container-fluid">
+
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <ol>
+              <li><a href="index.html">About Us</a></li>
+              <li>Mission</li>
+            </ol>
+            <h2>Mission</h2>
+            <ul>
+              <li>ಪಂಚರಾತ್ರಾಗಮ ಕೋಶ</li>
+              <p>ವಿಷ್ಣುವಿನಿಂದ ರಚಿತವಾದ ಆಗಮವೇ ಪಂಚರಾತ್ರಾಗಮ. ಇದು ವೈಷ್ಣವಾಗಮ. ಈ ಗ್ರಂಥವು ಬಹಳ ವಿಸ್ತೃತವಾಗಿದ್ದು ಸುಮಾರು ಇಪ್ಪತ್ತೊಂದು ಸಂಹಿತೆಗಳನ್ನು ಒಳಗೊಂಡಿದೆ. ಇವುಗಳಲ್ಲಿ ಕೆಲವು ಮುದ್ರಿತವಾಗಿದ್ದು ಅವುಗಳು ಕೂಡ ಪ್ರಸ್ತುತ ಲಭ್ಯವಿರುವುದಿಲ್ಲ. ಇದರ ಲಭ್ಯವಿರುವ ಹಸ್ತಪ್ರತಿಗಳನ್ನು ಸಂಗ್ರಹಿಸಿ ಪ್ರಕಟಗೊಂಡಿರುವ ಪ್ರತಿಗಳೊಂದಿಗೆ ವಿಮರ್ಶಿಸಿ ಶುದ್ಧಪಾಠವನ್ನು ಸಿದ್ಧಗೊಳಿಸಿ ಪ್ರಕಾಶನ ಮಾಡಲಾಗುವುದು. ಹಾಗೂ ಕನ್ನಡ ಅನುವಾದದೊಂದಿಗೆಪ್ರಕಾಶಿಸಲಾಗುವುದು. ಇದು ಸಂಶೋಧಕರಿಗೆ ವಿದ್ವಾಂಸರಿಗೆ ಹಾಗೂ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅತ್ಯಂತ ಉಪಯುಕ್ತವಾಗಿರುತ್ತದೆ.</p>
+            
+            <li>ದ್ವೆತ ವಾಙ್ಮಯದ ಡಿಜಟೀಲೀಕರಣ</li>
+            <p>ಭಾರತೀಯ ತತ್ತ್ವಜ್ಞಾನದ ಪರಂಪರೆಗೆ ಜಗದ್ಗುರುಗಳಾದ ಶ್ರೀಮಧ್ವಾಚಾರ್ಯರು ವಿಶಿಷ್ಠವಾದ ಕೊಡುಗೆಯನ್ನು ನೀಡಿದವರು. ಬ್ರಹ್ಮಸೂತ್ರಗಳಿಗೆ ಹೊಸ ರೀತಿಯಲ್ಲಿ ವಿಮರ್ಶಿಸಿ ಭಾಷ್ಯ, ಅನುವ್ಯಾಖ್ಯಾನ ಮುಂತಾದ ಗ್ರಂಥಗಳನ್ನು ರಚಿಸಿದ್ದಾರೆ. ಇದೇ ಪರಂಪರೆಯಲ್ಲಿ ಮುಂದೆ ಬಂದ ಜಯತೀರ್ಥರು, ವ್ಯಾಸರಾಜರು, ವಾದಿರಾಜರು ಮುಂತಾದವರು ವ್ಯಾಖ್ಯಾನಗಳನ್ನು ಟಿಪ್ಪಣಿಗಳನ್ನು ರಚಿಸಿ ಸಾಹಿತ್ಯವನ್ನು ಶ್ರಿಮಂತಗೊಳಿಸಿದ್ದಾರೆ. ಹಾಗೆಯೇ ಪುರಂದರದಾಸರು, ಕನಕದಾಸರು ಮುಂತಾದ ದಾಸವರೇಣ್ಯರು ಕನ್ನಡ ಕೃತಿಗಳನ್ನು ರಚಿಸಿ ಜನಸಾಮಾನ್ಯರಿಗೆ ತತ್ತ್ವಜ್ಞಾನವನ್ನು ಮುಟ್ಟಿಸಿದ ಮಹತ್ತಾದ ಕಾರ್ಯವನ್ನು ಮಾಡಿದ್ದಾರೆ. ಈ ಎಲ್ಲಾ ಕಾರ್ಯಗಳು ಈಗಾಗಲೇ ಪುಸ್ತಕ ರೂಪದಲ್ಲಿ ಪ್ರಕಾಶನವಾಗಿ ಇನ್ನೂ ಕೆಲವು ಕಾರ್ಯಗಳು ನಡೆಯುತ್ತಿವೆ. ಇವತ್ತಿನ ಕಾಲಘಟ್ಟಕ್ಕೆ ಅನುಸಾರವಾಗಿ ಈ ಎಲ್ಲಾ ಕಾರ್ಯಗಳನ್ನು ನೂತನ ತಂತ್ರಾಂಶಗಳನ್ನು ಬಳಸಿ ಜನಸಾಮಾನ್ಯರಿಗೆ ಸುಲಭವಾಗಿ ತಲುಪಿಸುವ ಡಿಜಿಟೀಲೀಕರಣ ಕಾರ್ಯವನ್ನು ಮಾಡಲಾಗುವುದು.</p>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+   
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Subscribe to our Newsletter</h4>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-xl-10">
+            <div class="row">
+
+              
+
+              
+
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h4></h4>
+               
+
+              </div>
+
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
