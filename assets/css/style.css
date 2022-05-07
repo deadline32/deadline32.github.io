@@ -607,10 +607,6 @@ section {
 # About
 --------------------------------------------------------------*/
 
-#about
-{
-  background-color: #7fadd5;
-}
 
 .about .icon-boxes h3 {
   font-size: 28px;
@@ -814,10 +810,7 @@ section {
 /*--------------------------------------------------------------
 # Events
 --------------------------------------------------------------*/
-#events
-{
-  background-color: #7fadd5;
-}
+
 
 .events .portfolio-item {
   margin-bottom: 30px;
@@ -1072,10 +1065,7 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-#contact
-{
-  background-color: #7fadd5;
-}
+
 .contact .info {
   padding: 50px 40px;
   background: #fefefe;
