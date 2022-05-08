@@ -709,7 +709,7 @@ section {
 
 .event-f h3
 {
-  margin-left: 700px;
+  margin-left: 680px;
   margin-top: 40px;
   font-size: 32px;
   font-weight: 700;
@@ -1366,6 +1366,12 @@ Cources
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+
+.contact .event-f
+{
+  margin-bottom: 100px;
+ 
+}
 
 .contact .info {
   padding: 30px 20px;
