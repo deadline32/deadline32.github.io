@@ -213,7 +213,7 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   transition: all 0.5s;
   top: 50px;
-  margin-top: 370px;
+  
   position: absolute;
   z-index: 997;
   padding: 15px 0;
@@ -667,7 +667,7 @@ section {
   font-size: 14px;
 }
 .about .video-box {
-  background: url("../img/slide/WhatsApp\ Image\ 2022-05-04\ at\ 11.26.34\ AM.jpeg") center center no-repeat;
+  background: url("../img/slide/WhatsApp Image 2022-05-08 at 2.24.06 PM.jpeg") center center no-repeat;
   background-size: cover;
   min-height: 500px;
 }
@@ -707,7 +707,14 @@ section {
   color: #a12c2f;
 }
 
-
+.event-f h3
+{
+  margin-left: 700px;
+  margin-top: 40px;
+  font-size: 32px;
+  font-weight: 700;
+  
+}
 
 #temp {
   height: 600px;
@@ -718,6 +725,9 @@ section {
   align-items: center;
   justify-items: center;
 }
+
+
+
 
 main#carousel {
   grid-row: 1 / 2;
@@ -1358,13 +1368,13 @@ Cources
 --------------------------------------------------------------*/
 
 .contact .info {
-  padding: 50px 40px;
+  padding: 30px 20px;
   background: #fefefe;
   box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
   text-align: center;
 }
 .contact .info i {
-  font-size: 48px;
+  font-size: 38px;
   color: #f7a656;
   margin-bottom: 15px;
 }

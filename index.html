@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Hidayah Bootstrap Template - Index</title>
+  <title>श्रीव्यासतीर्थसंशोधनप्रतिष्ठानम्</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -88,7 +88,47 @@
 renderTime();
   </script>
 
+  <script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("item");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+  </script>
+
+<script>
+  function Check_next() {
+   var wanted = document.getElementsByName("position");
+   for (var i = 0; i < wanted.length; ++i) {
+       if (wanted[i].checked == true) {
+           if (i == wanted.length - 1)
+           {
+               wanted[0].checked = true;
+           } else {
+               wanted[i + 1].checked = true;
+           }
+           break;
+       }
+   }
+}
+
+setInterval(function () {
+   Check_next()
+}, 2000)
+</script>
+
+
 </head>
+
 
 
 <body onload="renderTime();">
@@ -113,49 +153,13 @@ renderTime();
     </div>
   </div>
 
-  <div class="logos">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 col-sm-8">
-          <div class="left-content">
-          <img src="assets/img/download (1).jpg">
-          </div>
-        </div>
-        <div class="col-lg-4 col-sm-4">
-          <div class="right-icons">
-            <img src="assets/img/Screenshot 2022-05-08 113629.jpg">
-          </div>
-        </div>
-      </div>
-    </div>
 
-  </div>
-   
-  <style>
-    
-    #logos
-    {
-      background-color: antiquewhite;
-    }
-
-    .logos .left-content
-    {
-      margin-top: 100px;
-    }
-  </style>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-between">
 
-    <!--  <h1 class="logo"><a href="index.html">श्रीव्यासतीर्थसंशोधनप्रतिष्ठानम्</a></h1> -->
-
-    <img
-      
-      
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
+    <h1 class="logo"><a href="index.html">श्रीव्यासतीर्थसंशोधनप्रतिष्ठानम्</a></h1>
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
@@ -191,38 +195,38 @@ renderTime();
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
-    <div class="row">
-      <div class="column">
-        <img src="assets/img/Screenshot 2022-05-08 113605.jpg" alt="Snow" style="width:100%">
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div class="row">
+        <div class="column">
+          <img src="assets/img/Screenshot 2022-05-08 113605.jpg" alt="Snow" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/img/Screenshot 2022-05-08 113629.jpg" alt="Forest" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="assets/img/Screenshot 2022-05-08 113650.jpg" alt="Mountains" style="width:100%">
+        </div>
       </div>
-      <div class="column">
-        <img src="assets/img/Screenshot 2022-05-08 113629.jpg" alt="Forest" style="width:100%">
-      </div>
-      <div class="column">
-        <img src="assets/img/Screenshot 2022-05-08 113650.jpg" alt="Mountains" style="width:100%">
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <style>
+    <style>
 
-#hero .column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-}
+  #hero .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
 
-    #hero .row::after
-    {
-      content: "";
-  clear: both;
-  display: table;
-    }
-  </style>
+      #hero .row::after
+      {
+        content: "";
+    clear: both;
+    display: table;
+      }
+    </style>
 
-  
+    
   <!-- End Hero -->
 
   <main id="main">
@@ -239,10 +243,7 @@ renderTime();
                 <div class="col-xl-5 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
                   <h3>About Us</h3>
                   <p>ಶ್ರೀವ್ಯಾಸತೀರ್ಥಸಂಶೋಧನಪ್ರತಿಷ್ಠಾನ ಸಂಸ್ಥೆಯ ಪರಿಚಯ </p>
-                  <p>ಶ್ರೀ ವ್ಯಾಸರಾಜಮಠಕ್ಕೆ ಸುಮಾರು ೮೦೦ ವರ್ಷಗಳ ಇತಿಹಾಸವಿದೆ. ಉಡುಪಿಯ ಸಮೀಪ ಪಾಜಕ ಕ್ಷೇತ್ರದಲ್ಲಿ ಅವತರಿಸಿದ ಶ್ರೀಮನ್ಮಧ್ವಾಚಾರ‍್ಯರು ಈ ಮಠದ ಮೂಲಪುರುಷರು, ಶ್ರೀಮನ್ಮಧ್ವಾಚಾರ್ಯರ ನಂತರ ಶ್ರೀಪದ್ಮನಾಭತೀರ‍್ಥರು, ಶ್ರೀಜಯತೀರ್ಥರು, ಶ್ರೀರಾಜೇಂದ್ರತೀರ್ಥರು ಇವರೇ ಮುಂತಾದ ಮಹನೀಯರು ಪೀಠವನ್ನಲಂಕರಿಸಿದರು. ನಂತರ ವಿಜಯನಗರಸಾಮ್ರಾಜ್ಯದ ರಾಜರಿಗೆ ರಾಜಗುರುಗಳಾಗಿದ್ದ, ತಿರುಮಲದ ಶ್ರೀನಿವಾಸದೇವರನ್ನು ೧೨ ವರ್ಷ ಕಾಲ ಪೂಜಿಸಿದ ಶ್ರೀವ್ಯಾಸರಾಜರು ಈ ಪೀಠವನ್ನು ಅಲಂಕರಿಸಿದರು. ಅವರ ಅಸಾಧಾರಣ ವ್ಯಕ್ತಿತ್ವದಿಂದಲೇ ಈ ಮಠಕ್ಕೆ ವ್ಯಾಸರಾಜಮಠವೆಂದು ಪ್ರಸಿದ್ಧಿ ಬಂದಿತು. ಇವರು ವ್ಯಾಸಸಾಹಿತ್ಯವಲ್ಲದೇ ದಾಸಸಾಹಿತ್ಯವನ್ನು ಶ್ರೀಮಂತಗೊಳಿಸಿದ ಮಹನೀಯರು,  ಈ ಮಠವು ಮೈಸೂರಿನ ಸಮೀಪದಲ್ಲಿರುವ ಸೋಸಲೆ ಗ್ರಾಮದಲ್ಲಿದೆ. 
-                    ಶ್ರೀ ವ್ಯಾಸರಾಜರ ನಂತರ ಇವರ ಪರಂಪರೆಯಲ್ಲಿ ಅನೇಕ ಯತಿಗಳು ಗ್ರಂಥಕಾರರಾಗಿ ಮಾನ್ಯರಾಗಿದ್ದಾರೆ. ಭಾರತೀಯ ತತ್ವಶಾಸ್ತ್ರಕ್ಕೆ ಅವರ ಕೊಡುಗೆ ಅಪಾರ. ಅವರಲ್ಲಿ ಮುಖ್ಯರಾದವರು ಶ್ರೀ ಶ್ರೀ ರಘುನಾಥತೀರ‍್ಥರು, ಶ್ರೀಜಗನ್ನಾಥಯತಿಗಳು ಮುಂತಾದವರು. ಇವರ ಪರಂಪರೆಯಲ್ಲಿ ೪೧ನೆಯವರಾಗಿ ಪ್ರಸ್ತುತ ಪೀಠದಲ್ಲಿ ವಿರಾಜಮಾನರಾದ ಶ್ರೀ ಶ್ರೀ ವಿದ್ಯಾಶ್ರೀಶತೀರ್ಥರು ನ್ಯಾಯ, ವೇದಾಂತ, ವ್ಯಾಕರಣ, ಮೀಮಾಂಸಾ ಮುಂತಾದವುಗಳಲ್ಲಿ ತಲಸ್ಪರ್ಶಿಪಾಂಡಿತ್ಯ ಸಂಪಾದಿಸಿ ತಿರುಪತಿಯ ರಾಷ್ಟ್ರೀಯಸಂಸ್ಕೃತ ವಿದ್ಯಾಪೀಠದ ಉಪಕುಲಪತಿಗಳಾಗಿ ಸೇವೆ ಸಲ್ಲಿಸಿದ್ದರಲ್ಲದೇ ನೂರಕ್ಕೂ ಹೆಚ್ಚು ಗ್ರಂಥಗಳ ಸಂಪಾದನೆ ಹಾಗೂ ಪ್ರಕಾಶನಕ್ಕೆ ಭಾಜನರಾಗಿದ್ದಾರೆ. 
-                    ಪೂರ್ಣಪ್ರಜ್ಞ ಸಂಶೋಧನ ಮಂದಿರದ ನಿರ್ದೇಶಕರಾಗಿ, ೨೮ ವರ್ಷಗಳ ಕಾಲ ದ್ವೈತವೇದಾಂತ ಅಧ್ಯಯನ ಮತ್ತು ಸಂಶೋಧನ ಪ್ರತಿಷ್ಠಾನದ ವಿಭಾಗದ ಅಧ್ಯಕ್ಷರಾಗಿ ಸಂಸ್ಥೆಯ ಸಮಗ್ರ ಅಭಿವೃದ್ಧಿಗೆ ಕಾರಣರಾಗಿದ್ದಾರೆ.
-                    </p>
+                  
 
                   
                 </div>
@@ -306,13 +307,21 @@ renderTime();
 
       </div>
     </section> -->
-
+    <div class="event-f">
+      <h3>Events</h3>
+    </div>
+    
     <section id="temp" class="temp">
+        <h3>Events </span></h3>
+        
       <input type="radio" name="position" checked />
       <input type="radio" name="position" />
       <input type="radio" name="position" />
       <input type="radio" name="position" />
       <input type="radio" name="position" />
+
+      
+
   <main id="carousel">
     <div class="item">
       <div class="down-content">
@@ -353,8 +362,10 @@ renderTime();
     <main>
   </section>
 
+
+
    
-    <div id="Gallery" data-bs-interval="1000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="Gallery" data-bs-interval="3000" class="carousel slide carousel-fade" data-bs-ride="carousel">
       <div class="section-title">
       <h3> Gallery</h3>
       <div class="carousel-inner">
@@ -399,17 +410,17 @@ renderTime();
               
                 <div class="row justify-content-center">
 
-                  <div class="col-md-6 info d-flex flex-column align-items-stretch">
+                  <div class="col-md-6 info d-flex flex-column ">
                     <i class="bx bx-map"></i>
                     <h4>Address</h4>
                     <p>Sri Vyasatirtha Samshodhana Pratishthanam,<br>Sri Vyasatirtha Vidyapeeta Campus<br>#26, 3rd main, 2nd cross<br>Krishnamurthypuram<br>Mysore - 570004</p>
                   </div>
-                  <div class="col-md-6 info d-flex flex-column align-items-stretch">
+                  <div class="col-md-6 info d-flex flex-column ">
                     <i class="bx bx-phone"></i>
                     <h4>Call Us</h4>
                     <p>+91 7337763918</p>
                   </div>
-                  <div class="col-md-6 info d-flex flex-column align-items-stretch">
+                  <div class="col-md-6 info d-flex flex-column ">
                     <i class="bx bx-envelope"></i>
                     <h4>Email Us</h4>
                     <p>svstp732@gmail.com</p>
@@ -455,7 +466,7 @@ renderTime();
             <div class="row">
 
 
-              <div class="col-lg-3 col-md-6 footer-links">
+              <div class="col-sm-4 footer-links">
                 <h4>Important Links</h4>
                 <ul>
                   <li><i class="bx bx-chevron-right"></i> <a href="#">Publications</a></li>
@@ -466,7 +477,7 @@ renderTime();
                 </ul>
               </div>
 
-              <div class="col-lg-3 col-md-6 footer-contact">
+              <div class="col-sm-4  footer-contact">
                 <h4>Reach Us</h4>
                 <p>
                   Sri Vyasatirtha Samshodhana Pratishthanam <br>
@@ -479,7 +490,7 @@ renderTime();
 
               </div>
 
-              <div class="col-lg-3 col-md-6 footer-info">
+              <div class="col-sm-4 footer-info">
                 <h3>Reach Us</h3>
                 
                 <iframe width="400"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15593.248723939809!2d76.6390137!3d12.2947511!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6dbc7abd1a2e098!2sSri%20Vyasatirtha%20Vidyapeetha%2C%20Sri%20Vyasaraja%20Mutt!5e0!3m2!1sen!2sin!4v1651993607735!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
